@@ -1,0 +1,4 @@
+{
+    "ignoreTestFiles": "**/examples/*",
+    "baseURL": "https://kristallknuten.se/"
+}
