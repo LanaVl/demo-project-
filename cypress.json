@@ -1,4 +1,8 @@
 {
     "ignoreTestFiles": "**/examples/*",
-    "baseURL": "https://kristallknuten.se/"
+    "baseURL": "https://kristallknuten.se/",
+
+        "viewportWidth": 1000,
+        "viewportHeight": 660
+      
 }
