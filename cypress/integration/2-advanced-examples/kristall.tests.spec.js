@@ -1,5 +1,4 @@
-
-/// <reference types = "cypress"/>
+ 
 
    describe('Verify login functionality', () => {
         beforeEach(() => {

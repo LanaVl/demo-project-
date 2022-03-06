@@ -1,4 +1,4 @@
-/// <reference types = "cypress"/>
+ 
 
  describe('Verify search functionality', () => {
     it('check entering in Search field', () => {  
