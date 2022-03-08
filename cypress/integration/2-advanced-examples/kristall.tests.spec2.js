@@ -6,11 +6,12 @@
         // make sure we are on the home page 
         cy.contains('Välkommen till Kristallknuten');
      // get search field with the specific name check that search function works
-        cy.get('input[name="s"]').type('Halsband{enter}');
+        cy.get('input[name="s"]:eq(0)').type('Halsband{enter}');
         cy.url().should('include', '?s=Halsband');
         
     })
 })  
+
 describe('Verify product page functionality', () => {
      it('check adding item to the cart', () => {  
         cy.visit("https://kristallknuten.se/smycken/halsband/halsband-akvamarin");
@@ -31,3 +32,4 @@ describe('Verify product page functionality', () => {
         cy.contains('Instagram').should('exist')
     })
     })
+    
