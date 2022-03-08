@@ -1,6 +1,6 @@
  
 
-/* describe('Verify search functionality', () => {
+ describe('Verify search functionality', () => {
     it('check entering in Search field', () => {  
         cy.visit("https://kristallknuten.se/")
         // make sure we are on the home page 
@@ -10,8 +10,7 @@
         cy.url().should('include', '?s=Halsband');
         
     })
-})  */
-
+})  
 describe('Verify product page functionality', () => {
      it('check adding item to the cart', () => {  
         cy.visit("https://kristallknuten.se/smycken/halsband/halsband-akvamarin");
@@ -22,5 +21,13 @@ describe('Verify product page functionality', () => {
     //check deliting item from the cart' 
         cy.get('[class = "qs-cart-delete btn"]').click({force: true});
         cy.contains('Din varukorg är tom, men det behöver den inte vara.').should('exist')
+    })
+    })
+
+    describe('Check social media buttons', () => {
+       it('verify functionality of Facebook and Instagram links', () => {   
+        cy.visit("https://kristallknuten.se/");
+        cy.contains('Facebook').should('exist');
+        cy.contains('Instagram').should('exist')
     })
     })
